@@ -1,7 +1,8 @@
-.hideme{
+.hideme {
   display: none;
 }
-.text-end{
+
+.text-end {
   margin-left: 50px;
   color: red;
 }
