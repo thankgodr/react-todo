@@ -1,23 +1,61 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './componnets/header';
+import TodoInput from './componnets/todoinput';
+import {useState} from "react"
+import TodoItem from './componnets/todoitem';
 
 function App() {
+  const [todos, setTodos] = useState([])
+  const [current, setCurrent] = useState("")
+const updateStateCurrent = (newCurrent) => {
+   setCurrent(newCurrent)
+}
+
+const addnew = () => {
+  const newTodo = {
+    name: current,
+    completed: false,
+    id: Math.round((new Date()).getTime() / 1000)
+  }
+  const newList = [...todos]
+  newList.push(newTodo)
+  setTodos(newList)
+  updateStateCurrent("")
+}
+
+const deleteTodo = (todoId) => {
+   const newList = todos.filter((todo) => todo.id !== todoId)
+   setTodos(newList)
+}
+
+const updateTodo = (toEdit) => {
+  const newList = todos.filter((todo) => todo.id !== toEdit.id)
+  newList.push(toEdit)
+  setTodos(newList)
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <div className='row'>
+          <div className='col-3'>
+
+          </div>
+          <div className='col-7 ml-2 mr-2'>
+              <Header />
+              <TodoInput 
+                updateCurrent={(ev) => updateStateCurrent(ev)} 
+                current={current} 
+                addnew={addnew}/>
+                <ul class="list-group rounded-0">
+                  {todos.sort((a,b) => a.id > b.id).map(todo => (<TodoItem 
+                  todo={todo} 
+                  key={todo.id} 
+                  deleteTodo={deleteTodo}
+                  updateTodo={updateTodo}/>
+                  ))}
+                </ul>
+          </div>
+       </div>
     </div>
   );
 }
