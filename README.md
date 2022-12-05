@@ -27,7 +27,7 @@ After you're finished please remove all the comments and instructions!
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Todo APP(React)</b></h3>
 
 </div>
 
@@ -59,9 +59,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [your_project_name] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> This is a simple todo app that uses the browser local storaget to store todos.
 
-**[your_project__name]** is a...
+**Todo APP** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -79,14 +79,14 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li>Not Applicable</li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li>Browser Local storage</li>
   </ul>
 </details>
 
@@ -94,11 +94,10 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Add Todo**
+- **Change Todo status**
+- **Delete Todo**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,7 +107,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://thankgodr.github.io/eact-todo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,83 +115,59 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+In order to run this project you need: Node and NPM(Node Package Manager)
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/thankgodr/react-todo.git
 ```
---->
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
 
 ```sh
-  cd my-project
-  gem install
+  cd react-todo
+  npm install
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
 
 ```sh
-  rails server
+  npm run start
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  npm run test
 ```
---->
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
 
 ```sh
-
+  npm run build
 ```
- -->
+ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -200,19 +175,12 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@thankgpdr](https://github.com/thankgpdr)
+- Twitter: [@madueketf](https://twitter.com/madueketf)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/thankgodr)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,11 +188,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Update UI with flat icons**
+- [ ] **Connect socials**
+- [ ] **Integrate with local callenda**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -242,9 +208,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project, Kindly give this project a star 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -252,9 +216,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank all microverse staff and students
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -264,13 +226,13 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **Hpw do I add a feature**
 
-  - [Answer_1]
+  - Clone this repo, add your feature an open a pull request.
 
-- **[Question_2]**
+- **Can I use other langguage to add feture**
 
-  - [Answer_2]
+  - The only supported tech stack is Javascript, HTML, and CSS
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
